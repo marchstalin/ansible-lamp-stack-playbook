@@ -1,10 +1,10 @@
 - name: Run apt upgrade
   become: yes
   command: apt-get update
-  apt:
+#  apt:
 #    upgrade: "yes"
-    update_cache: yes
-    cache_valid_time: 432000
+#    update_cache: yes
+#    cache_valid_time: 432000
 - name: Add the repository for MySql
   become: yes
   apt_repository:
