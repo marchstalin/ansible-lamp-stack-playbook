@@ -1,6 +1,8 @@
 - hosts: all
   become: true
   gather_facts: false
+  vars:   
+    mysql_root_password: password 
   pre_tasks:
   - name: Gathering Facts
     setup:
@@ -10,5 +12,5 @@
     - apache2
     
    
-  vars:
-    mysql_root_password: "mypass"
+#  vars:
+#    mysql_root_password: "mypass"
