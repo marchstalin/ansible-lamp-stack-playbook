@@ -30,5 +30,5 @@
               host="localhost" 
               password="India321" # mysql root password
               login_user=root
-              login_password="India321"
+              login_password=India321
               state=present
