@@ -8,7 +8,7 @@
 
 - name: Enable apache2 modules
   become: yes
-  command: a2enmod rewrite actions alias fastcgi proxy_fcgi
+  command: a2enmod rewrite actions fcgid alias proxy_fcgi
 
 - name: Upload apache2 default configuration
   become: yes
