@@ -7,7 +7,7 @@
 #  command: apt-get update
 
 - name: Install mysql
-  apt: pkg={{ item }} state=present
+  apt: pkg={{ item }} state=present update_cache=true
   become: true
   with_items:    
     - mysql-server
