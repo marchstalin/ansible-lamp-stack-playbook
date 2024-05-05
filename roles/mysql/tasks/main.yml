@@ -26,14 +26,9 @@
   service: name=mysql state=started enabled=yes
 
 - name: Update MySQL root password for all root accounts
-  become: yes
   mysql_user: name=root 
-              host={{ item }} 
-              password="India-321" # mysql root password
+              host="localhost" 
+              password="India$321" # mysql root password
               login_user=root
-              login_password="password"
+              login_password="India$321"
               state=present
-  with_items:
-    - 127.0.0.1
-    - ::1
-    - localhost
