@@ -31,5 +31,5 @@
     host="localhost" 
     password="India321"
     login_user=root
-    login_password=India321
+    login_password=India-321
     state=present
