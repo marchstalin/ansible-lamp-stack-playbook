@@ -29,7 +29,7 @@
   mysql_user: 
     name=root 
     host="localhost" 
-    password="India321" # mysql root password
+    password="India321"
     login_user=root
     login_password=India321
     state=present
