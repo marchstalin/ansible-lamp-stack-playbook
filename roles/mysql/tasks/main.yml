@@ -28,8 +28,8 @@
 - name: Update MySQL root password for all root accounts
   mysql_user: name=root
               host=localhost
-              password="{{ India321 }}"
+              password=India321
               check_implicit_admin=yes
               login_user=root
-              login_password="{{ India321 }}"
+              login_password=India321
               state=present
