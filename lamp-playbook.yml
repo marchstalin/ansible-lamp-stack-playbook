@@ -5,9 +5,10 @@
   - name: Gathering Facts
     setup:
   roles:
+    - mysql
     - php-fpm
     - apache2
-    - mysql
+    
    
   vars:
     mysql_root_password: "mypass"
