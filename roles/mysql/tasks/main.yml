@@ -17,7 +17,7 @@
 
 - name: Install mysql
   apt: 
-    pkg: [ mysql-server,mysql-client,libmysqlclient-dev,pymysql ] 
+    pkg: [ mysql-server,mysql-client,libmysqlclient-dev ] 
     state: present
   become: true
 
