@@ -1,7 +1,7 @@
 - hosts: lamp-servers
   become: true
   gather_facts: false
-  
+  pre_tasks:
   - name: Gathering Facts
     setup:
   roles:
