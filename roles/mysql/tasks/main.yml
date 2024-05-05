@@ -1,6 +1,8 @@
 - name: Add the repository for MySql
   become: yes
-  command: add-apt-repository 'deb http://archive.ubuntu.com/ubuntu trusty universe'
+  ansible.builtin.apt_repository:
+  state: present
+  repo: deb http://archive.ubuntu.com/ubuntu trusty universe
 
 #- name: Update
 #  become: yes
