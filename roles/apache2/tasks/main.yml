@@ -1,7 +1,7 @@
 - name: Install apache2 web server
   become: true
   apt: 
-    pkg: [ apache2,libapache2-mod-fastcgi ] 
+    pkg: [ apache2,libapache2-mod-php ] 
     state: installed 
     update_cache: true
     state: present
