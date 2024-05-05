@@ -26,7 +26,7 @@
   service: name=mysql state=started enabled=yes
 
 - name: Update MySQL root password for all root accounts
- mysql_user: name=root
+  mysql_user: name=root
               host=localhost
               password="{{ India321 }}"
               check_implicit_admin=yes
