@@ -1,6 +1,6 @@
 - name: Run apt upgrade
   become: yes
-  command: apt-get update
+  command: apt update
 #  apt:
 #    upgrade: "yes"
 #    update_cache: yes
