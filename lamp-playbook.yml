@@ -5,9 +5,9 @@
   - name: Gathering Facts
     setup:
   roles:
-    - mysql
-    - php-fpm
     - apache2
+    - php-fpm
+    - mysql
     
    
   vars:
