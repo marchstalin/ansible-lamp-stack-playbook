@@ -18,7 +18,7 @@
 - name: Install mysql
   apt: 
     pkg: [ mysql-server,mysql-client,libmysqlclient-dev ] 
-    state: absent
+    state: present
   become: true
 
 - name : Ensure mysql started
