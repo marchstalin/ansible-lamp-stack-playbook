@@ -2,7 +2,7 @@
   become: true
   gather_facts: false
   vars:   
-    mysql_root_password: password 
+    mysql_root_password: India321
   pre_tasks:
   - name: Gathering Facts
     setup:
