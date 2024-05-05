@@ -1,4 +1,4 @@
-- name: Add the repository for MySql 8.0
+- name: Add the repository for MySql 5.6
   become: yes
   command: add-apt-repository 'deb http://archive.ubuntu.com/ubuntu trusty universe'
 
@@ -10,8 +10,8 @@
   apt: pkg={{ item }} state=installed
   become: true
   with_items:    
-    - mysql-server-8.0
-    - mysql-client-8.0
+    - mysql-server-5.6
+    - mysql-client-5.6
     - python-mysqldb
     - libmysqlclient-dev
 
