@@ -1,4 +1,4 @@
-- hosts: lamp-servers
+- hosts: invent
   become: true
   gather_facts: false
   pre_tasks:
