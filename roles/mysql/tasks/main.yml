@@ -29,7 +29,7 @@
   become: yes
   mysql_user: name=root 
               host={{ item }} 
-              password=mysql_root_password
+              password="password"
               login_user=root
               login_password="password"
               state=present
