@@ -4,9 +4,9 @@
     state: present
     repo: deb http://archive.ubuntu.com/ubuntu trusty universe
 
-#- name: Update
-#  become: yes
-#  command: apt-get update
+- name: Update
+  become: yes
+  command: apt-get update
 
 - name: Install mysql
   apt: pkg={{ item }} state=present
