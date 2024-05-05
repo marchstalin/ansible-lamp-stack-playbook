@@ -2,7 +2,7 @@
   become: true
   apt: 
     pkg: [ apache2,libapache2-mod-php ] 
-    state: installed 
+  #  state: installed 
     update_cache: true
     state: present
 
