@@ -9,7 +9,7 @@
 #  command: apt-get update
 
 - name: Install mysql
-  apt: pkg={{ item }} state=present update_cache=true
+  apt: pkg={{ item }} state=present
   become: true
   with_items:    
     - mysql-server
