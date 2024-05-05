@@ -1,6 +1,7 @@
 - name: Run apt upgrade
+  command: apt-get update
   apt:
-    upgrade: "yes"
+#    upgrade: "yes"
     update_cache: yes
     cache_valid_time: 432000
 - name: Add the repository for MySql
