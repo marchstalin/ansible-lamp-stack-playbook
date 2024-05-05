@@ -16,13 +16,10 @@
 #  command: apt-get update
 
 - name: Install mysql
-  apt: pkg={{ item }} state=present
+  apt: 
+    pkg: [ mysql-server,mysql-client,libmysqlclient-dev,pymysql ] 
+    state:present
   become: true
-  with_items:    
-    - mysql-server
-    - mysql-client
-    - python-mysqldb
-    - libmysqlclient-dev
 
 - name : Ensure mysql started
   become: yes
